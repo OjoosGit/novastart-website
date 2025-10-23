@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>http://localhost:3000/robots.txt</loc><lastmod>2025-10-23T09:21:26.825Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/kennismaken-en-aanmelden</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/contact</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/kwaliteit</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/privacy</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/manifest.webmanifest</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/voor-ouders</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/samenwerkingen</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/wie-we-zijn</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/waar-we-voor-staan</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/sitemap.xml</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/cookies</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/wat-we-bieden</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/wat-we-bieden/basistraject</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/wat-we-bieden/dagbesteding</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/wat-we-bieden/doorstroomtraject</loc><lastmod>2025-10-23T09:21:26.826Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>

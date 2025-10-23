@@ -77,7 +77,7 @@ export default async function CookiesPage() {
 
             <h2>3. Cookies van derden</h2>
             <p>
-              Op sommige pagina's kunnen embedded content van derden (zoals YouTube video's 
+              Op sommige pagina&apos;s kunnen embedded content van derden (zoals YouTube video&apos;s 
               of Google Maps) worden weergegeven. Deze diensten kunnen cookies plaatsen. 
               Novastart heeft daar geen invloed op. Lees de privacyverklaringen van deze 
               diensten om te zien hoe zij met jouw gegevens omgaan:

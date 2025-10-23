@@ -1,7 +1,15 @@
 import { Resend } from "resend";
 import { ContactFormData } from "./validations";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend client lazily to avoid build errors when API key is missing
+let resend: Resend | null = null;
+
+function getResendClient() {
+  if (!resend && process.env.RESEND_API_KEY) {
+    resend = new Resend(process.env.RESEND_API_KEY);
+  }
+  return resend;
+}
 
 export async function sendContactEmail(data: ContactFormData) {
   const { name, email, phone, role, message } = data;
@@ -13,8 +21,15 @@ export async function sendContactEmail(data: ContactFormData) {
     anders: "Anders",
   };
 
+  const client = getResendClient();
+  
+  if (!client) {
+    console.error("RESEND_API_KEY is not configured");
+    return { success: false, error: new Error("Email service not configured") };
+  }
+
   try {
-    const result = await resend.emails.send({
+    const result = await client.emails.send({
       from: process.env.RESEND_FROM || "Novastart <no-reply@novastart.nl>",
       to: process.env.RESEND_TO || "info@novastart.nl",
       subject: `Nieuw contactformulier: ${name}`,
