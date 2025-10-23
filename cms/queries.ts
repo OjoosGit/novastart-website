@@ -1,13 +1,29 @@
 import { client, isSanityConfigured } from "@/lib/sanity.client";
 import imageUrlBuilder from "@sanity/image-url";
+import type { ImageUrlBuilder } from "@sanity/image-url/lib/types/builder";
 
 // Only create builder if Sanity is configured
 const builder = isSanityConfigured() ? imageUrlBuilder(client) : null;
 
-export function urlFor(source: any) {
+// Create a dummy builder that returns empty strings but maintains the chainable API
+const createDummyBuilder = (): ImageUrlBuilder => {
+  const dummyBuilder: any = {
+    url: () => "",
+    width: () => dummyBuilder,
+    height: () => dummyBuilder,
+    fit: () => dummyBuilder,
+    crop: () => dummyBuilder,
+    format: () => dummyBuilder,
+    quality: () => dummyBuilder,
+    auto: () => dummyBuilder,
+  };
+  return dummyBuilder as ImageUrlBuilder;
+};
+
+export function urlFor(source: any): ImageUrlBuilder {
   if (!builder) {
     console.warn("Sanity is not configured. Cannot generate image URLs.");
-    return { url: () => "" };
+    return createDummyBuilder();
   }
   return builder.image(source);
 }
