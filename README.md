@@ -2,7 +2,7 @@
 
 Een production-ready Next.js 15 website voor Novastart, een onderwijsinitiatief in Heerlen voor jongeren die zijn vastgelopen in het reguliere onderwijs.
 
-🌍 **Live:** [novastart-website.vercel.app](https://novastart-website.vercel.app)
+🌍 **Live:** https://novastart-website.vercel.app
 
 ## 🚀 Tech Stack
 
