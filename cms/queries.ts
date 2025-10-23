@@ -1,9 +1,14 @@
-import { client } from "@/lib/sanity.client";
+import { client, isSanityConfigured } from "@/lib/sanity.client";
 import imageUrlBuilder from "@sanity/image-url";
 
-const builder = imageUrlBuilder(client);
+// Only create builder if Sanity is configured
+const builder = isSanityConfigured() ? imageUrlBuilder(client) : null;
 
 export function urlFor(source: any) {
+  if (!builder) {
+    console.warn("Sanity is not configured. Cannot generate image URLs.");
+    return { url: () => "" };
+  }
   return builder.image(source);
 }
 
