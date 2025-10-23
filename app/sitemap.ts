@@ -1,8 +1,8 @@
 import { MetadataRoute } from 'next'
-import { client } from '@/lib/sanity.client'
+import { createClient } from 'next-sanity'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://novastart-website.vercel.app'
 
   // Static pages
   const staticPages = [
@@ -24,20 +24,32 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: route === '' ? 1 : 0.8,
   }))
 
-  // Dynamic program pages
+  // Dynamic program pages - only if Sanity is properly configured
   let programRoutes: MetadataRoute.Sitemap = []
-  try {
-    const programs = await client.fetch(
-      `*[_type == "program"]{ "slug": slug.current, _updatedAt }`
-    )
-    programRoutes = programs.map((program: any) => ({
-      url: `${baseUrl}/wat-we-bieden/${program.slug}`,
-      lastModified: new Date(program._updatedAt),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    }))
-  } catch (error) {
-    console.error('Error fetching programs for sitemap:', error)
+  const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
+  const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET
+  
+  if (projectId && dataset) {
+    try {
+      const client = createClient({
+        projectId,
+        dataset,
+        apiVersion: '2024-01-01',
+        useCdn: true,
+      })
+      
+      const programs = await client.fetch(
+        `*[_type == "program"]{ "slug": slug.current, _updatedAt }`
+      )
+      programRoutes = programs.map((program: any) => ({
+        url: `${baseUrl}/wat-we-bieden/${program.slug}`,
+        lastModified: new Date(program._updatedAt),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      }))
+    } catch (error) {
+      console.error('Error fetching programs for sitemap:', error)
+    }
   }
 
   return [...staticRoutes, ...programRoutes]
