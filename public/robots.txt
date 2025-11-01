@@ -1,12 +1,16 @@
-# *
+# Novastart Website - Robots.txt
 User-agent: *
 Allow: /
-Disallow: /api/
-Disallow: /privacy
-Disallow: /cookies
 
-# Host
-Host: http://localhost:3000
+# Blokkeer API endpoints
+Disallow: /api/
+
+# Blokkeer admin/studio routes (indien aanwezig)
+Disallow: /admin/
+Disallow: /studio/
+
+# Privacy pagina's mogen geïndexeerd worden (verwijder Disallow)
+# maar legal pages krijgen noindex via meta tags
 
 # Sitemaps
-Sitemap: http://localhost:3000/sitemap.xml
+Sitemap: https://novastart.nl/sitemap.xml

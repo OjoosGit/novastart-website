@@ -13,7 +13,10 @@ export default function Error({
   reset: () => void;
 }) {
   useEffect(() => {
-    console.error("Error:", error);
+    // Log alleen in development
+    if (process.env.NODE_ENV !== 'production') {
+      console.error("Error:", error);
+    }
   }, [error]);
 
   return (

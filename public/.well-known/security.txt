@@ -1,0 +1,10 @@
+Contact: mailto:info@grotius-lvo.nl
+Contact: tel:+31-45-5713952
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: nl, en
+Canonical: https://novastart.nl/.well-known/security.txt
+Policy: https://novastart.nl/privacy
+
+# Dank u voor het helpen de beveiliging van Novastart te verbeteren.
+# Als u een beveiligingsprobleem vindt, neem dan contact met ons op via bovenstaande gegevens.
+

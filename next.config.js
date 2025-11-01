@@ -17,6 +17,11 @@ const nextConfig = {
   // Onderdruk hydration warnings veroorzaakt door browser extensies
   reactStrictMode: true,
   
+  // Enable instrumentation for environment validation
+  experimental: {
+    instrumentationHook: true,
+  },
+  
   // GEEN cache headers - Next.js dynamic pages krijgen automatisch no-cache
   // Dit zorgt voor instant updates van Sanity content
 }

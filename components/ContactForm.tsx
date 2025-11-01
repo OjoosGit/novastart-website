@@ -45,7 +45,10 @@ export function ContactForm() {
         setSubmitStatus("error");
       }
     } catch (error) {
-      console.error("Form submission error:", error);
+      // Log alleen in development
+      if (process.env.NODE_ENV !== 'production') {
+        console.error("Form submission error:", error);
+      }
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
