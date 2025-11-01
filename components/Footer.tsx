@@ -71,7 +71,7 @@ export async function Footer() {
             <address className="text-neutral-400 text-sm not-italic">
               {contactInfo.address && (
                 <>
-                  {contactInfo.address.split('\n').map((line, index) => (
+                  {contactInfo.address.split('\n').map((line: string, index: number) => (
                     <span key={index}>
                       {index === 0 ? <strong>{line}</strong> : line}
                       <br />
