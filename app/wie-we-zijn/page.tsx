@@ -6,8 +6,9 @@ import { ContentRenderer } from "@/components/ContentRenderer";
 import { getTeamData, getContentPage } from "@/cms/queries";
 import type { Metadata } from "next";
 
-// Revalidate elke 10 seconden (ISR) voor snellere content updates
-export const revalidate = 10;
+// Force dynamic rendering voor instant content updates
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: "Wie we zijn - Novastart",

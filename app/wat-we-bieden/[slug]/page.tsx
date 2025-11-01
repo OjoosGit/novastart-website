@@ -8,8 +8,9 @@ import { getProgramBySlug, getProgramsData, urlFor } from "@/cms/queries";
 import { Clock, Users, CheckCircle } from "lucide-react";
 import type { Metadata } from "next";
 
-// Revalidate elke 10 seconden (ISR) voor snellere content updates
-export const revalidate = 10;
+// Force dynamic rendering voor instant content updates
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 type Props = {
   params: Promise<{ slug: string }>;
