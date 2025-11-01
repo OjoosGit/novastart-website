@@ -404,6 +404,11 @@ export async function getSiteSettings() {
         "url": grotiusLogo.asset->url,
         "alt": grotiusLogo.alt
       },
+      headerNavigation,
+      headerCTA,
+      footerDescription,
+      footerLinks,
+      copyrightText,
       contactInfo,
       socialLinks,
       defaultSEO

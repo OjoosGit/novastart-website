@@ -12,6 +12,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/wie-we-zijn',
     '/kennismaken-en-aanmelden',
     '/voor-ouders',
+    '/veelgestelde-vragen',
     '/kwaliteit',
     '/samenwerkingen',
     '/contact',
