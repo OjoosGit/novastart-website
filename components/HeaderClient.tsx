@@ -41,21 +41,22 @@ export function HeaderClient({ navigation, cta, siteTitle, logo }: HeaderClientP
           {/* Logo */}
           <Link
             href="/"
-            className="focus-visible-ring rounded-lg flex items-center gap-3"
+            className="focus-visible-ring flex items-center gap-3"
           >
             {logo?.url ? (
-              <div className="relative h-12 md:h-16 w-auto">
+              <div className="relative h-12 md:h-16 w-auto flex items-center">
                 <Image
                   src={logo.url}
                   alt={logo.alt || siteTitle}
                   width={200}
                   height={64}
-                  className="h-full w-auto object-contain"
+                  className="h-full w-auto object-contain max-h-12 md:max-h-16"
                   priority
+                  style={{ objectFit: 'contain' }}
                 />
               </div>
             ) : (
-              <span className="text-3xl md:text-4xl font-bold text-primary py-1 px-2">
+              <span className="text-3xl md:text-4xl font-bold text-primary py-1 px-2 rounded-lg">
                 {siteTitle}
               </span>
             )}
