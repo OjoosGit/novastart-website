@@ -14,7 +14,9 @@ if (projectId) {
     projectId,
     dataset,
     apiVersion: "2024-01-01",
-    useCdn: process.env.NODE_ENV === "production",
+    // Disable CDN for instant content updates from Sanity Studio
+    // useCdn: true would cache content for better performance but slower updates
+    useCdn: false,
     token: process.env.SANITY_API_READ_TOKEN,
   });
 } else {
