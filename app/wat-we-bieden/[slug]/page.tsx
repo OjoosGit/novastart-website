@@ -8,8 +8,8 @@ import { getProgramBySlug, getProgramsData, urlFor } from "@/cms/queries";
 import { Clock, Users, CheckCircle } from "lucide-react";
 import type { Metadata } from "next";
 
-// Revalidate elke 60 seconden (ISR)
-export const revalidate = 60;
+// Revalidate elke 10 seconden (ISR) voor snellere content updates
+export const revalidate = 10;
 
 type Props = {
   params: Promise<{ slug: string }>;

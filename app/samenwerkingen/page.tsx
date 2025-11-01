@@ -5,8 +5,8 @@ import { Container } from "@/components/Container";
 import { getPartnersData } from "@/cms/queries";
 import type { Metadata } from "next";
 
-// Revalidate elke 60 seconden (ISR)
-export const revalidate = 60;
+// Revalidate elke 10 seconden (ISR) voor snellere content updates
+export const revalidate = 10;
 
 export const metadata: Metadata = {
   title: "Samenwerkingen - Novastart",
