@@ -4,6 +4,7 @@ export default defineCliConfig({
   api: {
     projectId: 'o83md0uy',
     dataset: 'production'
-  }
+  },
+  studioHost: 'novastart-cms'
 })
 
