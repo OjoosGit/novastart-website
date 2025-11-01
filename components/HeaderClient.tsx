@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Container } from "./Container";
@@ -17,13 +18,19 @@ type HeaderCTA = {
   href: string;
 };
 
+type Logo = {
+  url: string;
+  alt?: string;
+};
+
 type HeaderClientProps = {
   navigation: NavigationItem[];
   cta: HeaderCTA;
   siteTitle: string;
+  logo?: Logo | null;
 };
 
-export function HeaderClient({ navigation, cta, siteTitle }: HeaderClientProps) {
+export function HeaderClient({ navigation, cta, siteTitle, logo }: HeaderClientProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
@@ -34,9 +41,24 @@ export function HeaderClient({ navigation, cta, siteTitle }: HeaderClientProps) 
           {/* Logo */}
           <Link
             href="/"
-            className="text-3xl md:text-4xl font-bold text-primary focus-visible-ring rounded-lg py-1 px-2"
+            className="focus-visible-ring rounded-lg flex items-center gap-3"
           >
-            {siteTitle}
+            {logo?.url ? (
+              <div className="relative h-12 md:h-16 w-auto">
+                <Image
+                  src={logo.url}
+                  alt={logo.alt || siteTitle}
+                  width={200}
+                  height={64}
+                  className="h-full w-auto object-contain"
+                  priority
+                />
+              </div>
+            ) : (
+              <span className="text-3xl md:text-4xl font-bold text-primary py-1 px-2">
+                {siteTitle}
+              </span>
+            )}
           </Link>
 
           {/* Desktop menu */}

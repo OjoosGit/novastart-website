@@ -40,6 +40,7 @@ export async function Header() {
   const navigation = siteSettings?.headerNavigation || defaultNavigation;
   const cta = siteSettings?.headerCTA || defaultCTA;
   const siteTitle = siteSettings?.siteTitle || "Novastart";
+  const logo = siteSettings?.logo;
 
-  return <HeaderClient navigation={navigation} cta={cta} siteTitle={siteTitle} />;
+  return <HeaderClient navigation={navigation} cta={cta} siteTitle={siteTitle} logo={logo} />;
 }

@@ -37,6 +37,15 @@ export default defineType({
       options: {
         hotspot: true,
       },
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alt tekst',
+          description: 'Beschrijving voor toegankelijkheid',
+          initialValue: 'Novastart logo'
+        }
+      ],
       group: 'general',
     }),
     defineField({

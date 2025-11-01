@@ -399,7 +399,10 @@ export async function getSiteSettings() {
     const query = `*[_type == "siteSettings"][0]{
       siteTitle,
       description,
-      logo,
+      "logo": {
+        "url": logo.asset->url,
+        "alt": logo.alt
+      },
       "grotiusLogo": {
         "url": grotiusLogo.asset->url,
         "alt": grotiusLogo.alt
@@ -415,7 +418,9 @@ export async function getSiteSettings() {
     }`;
     return await client.fetch(query);
   } catch (error) {
-    console.error("Error fetching site settings:", error);
+    if (process.env.NODE_ENV !== 'production') {
+      console.error("Error fetching site settings:", error);
+    }
     return null;
   }
 }
