@@ -5,6 +5,9 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { getFAQData } from "@/cms/queries";
 import type { Metadata } from "next";
 
+// Revalidate elke 60 seconden (ISR)
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "Voor ouders - Novastart",
   description: "Informatie voor ouders: veelgestelde vragen over aanmelding, kosten, begeleiding en meer.",

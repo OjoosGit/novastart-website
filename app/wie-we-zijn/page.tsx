@@ -6,6 +6,9 @@ import { ContentRenderer } from "@/components/ContentRenderer";
 import { getTeamData, getContentPage } from "@/cms/queries";
 import type { Metadata } from "next";
 
+// Revalidate elke 60 seconden (ISR)
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "Wie we zijn - Novastart",
   description: "Maak kennis met ons team: ervaren docenten en begeleiders die jongeren een nieuwe start geven.",

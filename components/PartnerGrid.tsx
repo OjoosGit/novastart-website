@@ -78,3 +78,5 @@ export function PartnerGrid({ partners }: PartnerGridProps) {
   );
 }
 
+
+

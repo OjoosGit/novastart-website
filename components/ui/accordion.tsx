@@ -46,3 +46,5 @@ export function Accordion({ children, className }: AccordionProps) {
   return <div className={cn("space-y-2", className)}>{children}</div>;
 }
 
+
+

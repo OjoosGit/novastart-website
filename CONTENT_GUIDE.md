@@ -273,3 +273,5 @@ A: Nee! Sanity heeft een visuele editor. Je hoeft geen code te kennen.
 
 **Veel succes met het beheren van de Novastart website!** 🎉
 
+
+

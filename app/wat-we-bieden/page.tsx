@@ -4,6 +4,9 @@ import { CTA } from "@/components/CTA";
 import { getProgramsData, getContentPage } from "@/cms/queries";
 import type { Metadata } from "next";
 
+// Revalidate elke 60 seconden (ISR)
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "Wat we bieden - Novastart | Grotius College",
   description: "Een 9-maanden traject voor middelbare scholieren die een tijd niet naar school zijn geweest. Persoonlijke begeleiding met experts en coaches.",
