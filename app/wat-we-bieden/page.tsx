@@ -4,10 +4,6 @@ import { CTA } from "@/components/CTA";
 import { getProgramsData, getContentPage } from "@/cms/queries";
 import type { Metadata } from "next";
 
-// Force dynamic rendering voor instant content updates
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
-
 export const metadata: Metadata = {
   title: "Wat we bieden - Novastart | Grotius College",
   description: "Een 9-maanden traject voor middelbare scholieren die een tijd niet naar school zijn geweest. Persoonlijke begeleiding met experts en coaches.",

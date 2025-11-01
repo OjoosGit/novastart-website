@@ -4,10 +4,6 @@ import { CTA } from "@/components/CTA";
 import { getHomePageData } from "@/cms/queries";
 import type { Metadata } from "next";
 
-// Force dynamic rendering voor instant content updates
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
-
 export const metadata: Metadata = {
   title: "Novastart - (Her)Ontdek jouw toekomst | Grotius College",
   description: "Novastart is een 9-maanden traject voor middelbare scholieren die een tijd niet naar school zijn geweest. Een initiatief van Grotius College in Heerlen.",

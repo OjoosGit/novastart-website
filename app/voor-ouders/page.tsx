@@ -5,10 +5,6 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { getFAQData } from "@/cms/queries";
 import type { Metadata } from "next";
 
-// Force dynamic rendering voor instant content updates
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
-
 export const metadata: Metadata = {
   title: "Voor ouders - Novastart",
   description: "Informatie voor ouders: veelgestelde vragen over aanmelding, kosten, begeleiding en meer.",

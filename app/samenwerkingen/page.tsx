@@ -5,10 +5,6 @@ import { Container } from "@/components/Container";
 import { getPartnersData } from "@/cms/queries";
 import type { Metadata } from "next";
 
-// Force dynamic rendering voor instant content updates
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
-
 export const metadata: Metadata = {
   title: "Samenwerkingen - Novastart",
   description: "Onze partners en samenwerkingsverbanden in de regio Heerlen.",

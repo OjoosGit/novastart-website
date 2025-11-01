@@ -10,6 +10,11 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+// Force ALL pages to be dynamic for instant Sanity content updates
+// This applies to current and future pages automatically
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: "Novastart - Onderwijs voor jongeren in Heerlen",
   description: "Novastart biedt onderwijstrajecten voor jongeren die zijn vastgelopen in het reguliere onderwijs. Persoonlijke begeleiding in een kleinschalige setting.",

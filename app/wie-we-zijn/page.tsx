@@ -6,10 +6,6 @@ import { ContentRenderer } from "@/components/ContentRenderer";
 import { getTeamData, getContentPage } from "@/cms/queries";
 import type { Metadata } from "next";
 
-// Force dynamic rendering voor instant content updates
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
-
 export const metadata: Metadata = {
   title: "Wie we zijn - Novastart",
   description: "Maak kennis met ons team: ervaren docenten en begeleiders die jongeren een nieuwe start geven.",
