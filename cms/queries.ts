@@ -104,7 +104,7 @@ export async function getProgramsData() {
       voordelen,
       activiteiten,
       duur,
-      image,
+      "image": image.asset->url,
       description
     }`;
     const programs = await client.fetch(query);

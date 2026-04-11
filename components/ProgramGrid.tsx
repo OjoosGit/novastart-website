@@ -46,8 +46,8 @@ export function ProgramGrid({ programs }: ProgramGridProps) {
               <div className="relative aspect-[16/9] bg-neutral-200">
                 {program.image ? (
                   <Image
-                    src={urlFor(program.image).width(600).height(400).url()}
-                    alt={program.image.alt || program.title}
+                    src={program.image}
+                    alt={program.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
