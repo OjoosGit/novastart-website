@@ -47,9 +47,9 @@ export function HeaderClient({ navigation, cta, siteTitle, logo }: HeaderClientP
               <Image
                 src={logo.url}
                 alt={logo.alt || siteTitle}
-                width={200}
-                height={64}
-                className="h-12 md:h-16 w-auto !rounded-none"
+                width={280}
+                height={80}
+                className="h-14 md:h-20 w-auto !rounded-none"
                 priority
                 style={{ objectFit: 'contain' }}
               />
