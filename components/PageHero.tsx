@@ -9,7 +9,7 @@ interface PageHeroProps {
 export function PageHero({ title, description, image }: PageHeroProps) {
   if (image) {
     return (
-      <section className="relative min-h-[400px] md:min-h-[500px] flex items-center overflow-hidden">
+      <section className="relative min-h-[300px] md:min-h-[500px] flex items-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <div 
