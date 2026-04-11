@@ -40,6 +40,12 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'formEmail',
+      title: 'Formulier e-mailadres',
+      description: 'Naar welk adres worden contactformulier-berichten gestuurd? Als leeg wordt het e-mail veld hierboven gebruikt.',
+      type: 'string',
+    }),
+    defineField({
       name: 'openingHours',
       title: 'Openingstijden',
       description: 'Gebruik Enter voor nieuwe regels',

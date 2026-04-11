@@ -455,6 +455,7 @@ export async function getContactInfo() {
       address,
       phone,
       email,
+      formEmail,
       openingHours,
       mapUrl,
       publicTransport,

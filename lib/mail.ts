@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import { ContactFormData } from "./validations";
+import { getContactInfo } from "@/cms/queries";
 
-// Initialize Resend client lazily to avoid build errors when API key is missing
 let resend: Resend | null = null;
 
 function getResendClient() {
@@ -43,9 +43,12 @@ export async function sendContactEmail(data: ContactFormData) {
   }
 
   try {
+    const contactInfo = await getContactInfo();
+    const toEmail = contactInfo?.formEmail || contactInfo?.email || process.env.RESEND_TO || "info@novastart.nl";
+
     const result = await client.emails.send({
       from: process.env.RESEND_FROM || "Novastart <no-reply@novastart.nl>",
-      to: process.env.RESEND_TO || "info@novastart.nl",
+      to: toEmail,
       subject: `Nieuw contactformulier: ${escapeHtml(name)}`,
       html: `
         <h2>Nieuw bericht via contactformulier</h2>
