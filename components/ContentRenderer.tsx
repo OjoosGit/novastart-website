@@ -50,7 +50,7 @@ export function ContentRenderer({ sections }: ContentRendererProps) {
         switch (section._type) {
           case 'textSection':
             return (
-              <div key={index} className="mb-12">
+              <div key={index} className="mb-16">
                 {section.heading && (
                   <h2 className="text-h2 mb-6">{section.heading}</h2>
                 )}
@@ -65,7 +65,7 @@ export function ContentRenderer({ sections }: ContentRendererProps) {
 
           case 'gridSection':
             return (
-              <div key={index} className="mb-12">
+              <div key={index} className="mb-16">
                 {section.heading && (
                   <h2 className="text-h2 mb-8">{section.heading}</h2>
                 )}
@@ -85,7 +85,7 @@ export function ContentRenderer({ sections }: ContentRendererProps) {
 
           case 'processSteps':
             return (
-              <div key={index} className="mb-12">
+              <div key={index} className="mb-16">
                 {section.heading && (
                   <h2 className="text-h2 mb-6">{section.heading}</h2>
                 )}
@@ -111,7 +111,7 @@ export function ContentRenderer({ sections }: ContentRendererProps) {
             return (
               <div
                 key={index}
-                className="p-6 bg-neutral-50 rounded-lg border border-neutral-200 mb-12"
+                className="p-6 bg-neutral-50 rounded-lg border border-neutral-200 mb-16"
               >
                 {section.heading && (
                   <h3 className="font-semibold mb-2">{section.heading}</h3>

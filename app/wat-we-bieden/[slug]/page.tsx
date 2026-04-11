@@ -76,7 +76,7 @@ export default async function ProgramPage({ params }: Props) {
                 )}
 
                 {program.voordelen && program.voordelen.length > 0 && (
-                  <>
+                  <div className="mt-10">
                     <h2>Voordelen</h2>
                     <ul className="space-y-3">
                       {program.voordelen.map((voordeel: string, index: number) => (
@@ -86,18 +86,18 @@ export default async function ProgramPage({ params }: Props) {
                         </li>
                       ))}
                     </ul>
-                  </>
+                  </div>
                 )}
 
                 {program.activiteiten && program.activiteiten.length > 0 && (
-                  <>
+                  <div className="mt-10">
                     <h2>Activiteiten</h2>
                     <ul className="space-y-2">
                       {program.activiteiten.map((activiteit: string, index: number) => (
                         <li key={index}>• {activiteit}</li>
                       ))}
                     </ul>
-                  </>
+                  </div>
                 )}
               </div>
             </div>
