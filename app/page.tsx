@@ -29,8 +29,8 @@ export default async function HomePage() {
       />
       
       <Features
-        title="Wat maakt Novastart bijzonder?"
-        features={data?.features || [
+        title={data?.features?.title || "Wat maakt Novastart bijzonder?"}
+        features={data?.features?.items || [
           {
             title: "Kleinschalig",
             description: "Maximaal 12 leerlingen per groep voor persoonlijke aandacht",

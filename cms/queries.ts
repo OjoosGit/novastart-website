@@ -41,7 +41,14 @@ export async function getHomePageData() {
         ctaText,
         ctaLink
       },
-      "features": content[_type == "block"]
+      features {
+        title,
+        items[] {
+          title,
+          description,
+          icon
+        }
+      }
     }`;
     return await client.fetch(query);
   } catch (error) {

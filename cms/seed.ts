@@ -38,6 +38,32 @@ async function seed() {
         ctaText: "Meer informatie",
         ctaLink: "/kennismaken-en-aanmelden",
       },
+      features: {
+        title: "Wat maakt Novastart bijzonder?",
+        items: [
+          {
+            _type: "object",
+            _key: "feature-1",
+            title: "Kleinschalig",
+            description: "Maximaal 12 leerlingen per groep voor persoonlijke aandacht",
+            icon: "users",
+          },
+          {
+            _type: "object",
+            _key: "feature-2",
+            title: "Persoonlijke begeleiding",
+            description: "Een vaste mentor die jou door je traject helpt",
+            icon: "heart",
+          },
+          {
+            _type: "object",
+            _key: "feature-3",
+            title: "Flexibel programma",
+            description: "We passen ons aan jouw situatie en tempo aan",
+            icon: "calendar",
+          },
+        ],
+      },
     });
     console.log("✅ Home page created");
 

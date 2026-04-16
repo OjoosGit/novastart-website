@@ -54,6 +54,52 @@ export default defineType({
       ],
     }),
     defineField({
+      name: "features",
+      title: "Features Sectie",
+      description: "De drie kenmerken onder de hero (bijv. Kleinschalig, Persoonlijke begeleiding, Flexibel programma)",
+      type: "object",
+      group: 'content',
+      fields: [
+        {
+          name: "title",
+          title: "Sectie Titel",
+          description: "Bijv. 'Wat maakt Novastart bijzonder?'",
+          type: "string",
+        },
+        {
+          name: "items",
+          title: "Features",
+          type: "array",
+          of: [
+            {
+              type: "object",
+              fields: [
+                { name: "title", title: "Titel", type: "string", validation: (Rule: any) => Rule.required() },
+                { name: "description", title: "Beschrijving", type: "text", rows: 2 },
+                {
+                  name: "icon",
+                  title: "Icoon",
+                  type: "string",
+                  options: {
+                    list: [
+                      { title: "Gebruikers (groepje)", value: "users" },
+                      { title: "Hart", value: "heart" },
+                      { title: "Kalender", value: "calendar" },
+                    ],
+                  },
+                  initialValue: "users",
+                },
+              ],
+              preview: {
+                select: { title: "title", subtitle: "description" },
+              },
+            },
+          ],
+          validation: (Rule: any) => Rule.max(6),
+        },
+      ],
+    }),
+    defineField({
       name: "content",
       title: "Extra Content Blokken",
       description: "Optioneel: Extra content onder de features",

@@ -35,7 +35,7 @@ export function TeamGrid({ team }: TeamGridProps) {
           className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden"
         >
           <div className="relative aspect-square bg-neutral-200">
-            {member.photo ? (
+            {member.photo?.asset ? (
               <Image
                 src={urlFor(member.photo).width(400).height(400).url()}
                 alt={member.photo.alt || member.name}
