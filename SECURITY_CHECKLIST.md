@@ -36,7 +36,7 @@ RESEND_API_KEY=your_key_here
 
 # ✅ Aanbevolen
 RESEND_FROM=Novastart <no-reply@novastart.nl>
-RESEND_TO=info@grotius-lvo.nl
+RESEND_TO=Patrickwolters@gmail.com
 NEXT_PUBLIC_SITE_URL=https://novastart.nl
 
 # ⚠️ Optioneel (alleen als je server-side queries doet)
@@ -107,7 +107,7 @@ npm run start
 
 Voor het rapporteren van security issues:
 - Zie `public/.well-known/security.txt`
-- Email: info@grotius-lvo.nl
+- Email: Patrickwolters@gmail.com
 - Tel: 045 - 571 39 52
 
 ## 📚 Documentatie

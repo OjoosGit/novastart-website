@@ -50,7 +50,7 @@ export default async function PrivacyPage() {
               Novastart<br />
               Voorbeeldstraat 123<br />
               6411 AB Heerlen<br />
-              E-mail: info@novastart.nl<br />
+              E-mail: Patrickwolters@gmail.com<br />
               Telefoon: 045 - 123 4567
             </p>
 
@@ -120,7 +120,7 @@ export default async function PrivacyPage() {
             </ul>
             <p>
               Om deze rechten uit te oefenen, kun je contact met ons opnemen via 
-              info@novastart.nl.
+              Patrickwolters@gmail.com.
             </p>
 
             <h2>7. Beveiliging</h2>

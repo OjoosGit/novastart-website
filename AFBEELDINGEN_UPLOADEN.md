@@ -133,7 +133,7 @@ urlFor(image)
 
 Neem contact op met:
 - **Nathalie Colangeli-Kuckelkorn**: 06 46444455
-- **Patrick Wolters**: p.wolters@stichtinglvo.nl
+- **Patrick Wolters**: Patrickwolters@gmail.com
 
 
 

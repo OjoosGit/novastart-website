@@ -5,11 +5,11 @@ import { getHomePageData } from "@/cms/queries";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Novastart - (Her)Ontdek jouw toekomst | Grotius College",
-  description: "Novastart is een 9-maanden traject voor middelbare scholieren die een tijd niet naar school zijn geweest. Een initiatief van Grotius College in Heerlen.",
+  title: "Novastart - (Her)Ontdek jouw toekomst | Qeske",
+  description: "Novastart is een 9-maanden traject voor middelbare scholieren die een tijd niet naar school zijn geweest. Een initiatief van Qeske in Heerlen.",
   openGraph: {
-    title: "Novastart - (Her)Ontdek jouw toekomst | Grotius College",
-    description: "Novastart is een 9-maanden traject voor middelbare scholieren die een tijd niet naar school zijn geweest. Een initiatief van Grotius College in Heerlen.",
+    title: "Novastart - (Her)Ontdek jouw toekomst | Qeske",
+    description: "Novastart is een 9-maanden traject voor middelbare scholieren die een tijd niet naar school zijn geweest. Een initiatief van Qeske in Heerlen.",
     type: "website",
   },
 };
@@ -22,7 +22,7 @@ export default async function HomePage() {
       <Hero
         title={data?.hero?.title || "Novastart"}
         subtitle={data?.hero?.subtitle || "(Her)Ontdek jouw toekomst!"}
-        description={data?.hero?.description || "Welkom bij Novastart, jouw nieuwe begin in het onderwijs! Een 9-maanden traject speciaal voor middelbare scholieren die een tijd niet naar school zijn geweest en nu klaar zijn om hun weg terug te vinden. Een initiatief van Grotius College."}
+        description={data?.hero?.description || "Welkom bij Novastart, jouw nieuwe begin in het onderwijs! Een 9-maanden traject speciaal voor middelbare scholieren die een tijd niet naar school zijn geweest en nu klaar zijn om hun weg terug te vinden. Een initiatief van Qeske."}
         ctaText={data?.hero?.ctaText || "Meer informatie"}
         ctaLink={data?.hero?.ctaLink || "/kennismaken-en-aanmelden"}
         image={data?.hero?.image}

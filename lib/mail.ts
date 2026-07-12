@@ -44,7 +44,7 @@ export async function sendContactEmail(data: ContactFormData) {
 
   try {
     const contactInfo = await getContactInfo();
-    const toEmail = contactInfo?.formEmail || contactInfo?.email || process.env.RESEND_TO || "info@novastart.nl";
+    const toEmail = contactInfo?.formEmail || contactInfo?.email || process.env.RESEND_TO || "Patrickwolters@gmail.com";
 
     const result = await client.emails.send({
       from: process.env.RESEND_FROM || "Novastart <no-reply@novastart.nl>",

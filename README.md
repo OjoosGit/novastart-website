@@ -55,7 +55,7 @@ SANITY_API_WRITE_TOKEN=your_write_token
 # Resend (Email)
 RESEND_API_KEY=re_your_api_key
 RESEND_FROM="Novastart <no-reply@jouwdomein.nl>"
-RESEND_TO="info@novastart.nl"
+RESEND_TO="Patrickwolters@gmail.com"
 
 # Site URL
 NEXT_PUBLIC_SITE_URL=https://novastart.nl

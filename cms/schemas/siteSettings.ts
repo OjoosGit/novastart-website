@@ -49,9 +49,9 @@ export default defineType({
       group: 'general',
     }),
     defineField({
-      name: "grotiusLogo",
-      title: "Grotius College Logo",
-      description: "Logo van Grotius College voor in de footer (PNG met transparantie aanbevolen)",
+      name: "organizationLogo",
+      title: "Organisatie Logo",
+      description: "Logo van de organisatie voor in de footer (PNG met transparantie aanbevolen)",
       type: "image",
       options: {
         hotspot: true,
@@ -63,7 +63,7 @@ export default defineType({
           title: 'Alt tekst',
           description: 'Beschrijving voor toegankelijkheid',
           validation: (Rule) => Rule.required(),
-          initialValue: 'Grotius College logo'
+          initialValue: 'Qeske logo'
         }
       ],
       group: 'general',
@@ -151,7 +151,7 @@ export default defineType({
       description: "Gebruik {year} voor het huidige jaar",
       type: "string",
       group: 'footer',
-      initialValue: "© {year} Novastart - Grotius College. Alle rechten voorbehouden.",
+      initialValue: "© {year} Novastart - Qeske. Alle rechten voorbehouden.",
     }),
     defineField({
       name: "contactInfo",

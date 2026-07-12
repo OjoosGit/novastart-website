@@ -10,12 +10,12 @@ const defaultFooterLinks = [
   { name: "Cookies", href: "/cookies" },
 ];
 
-const defaultDescription = "Een initiatief van Grotius College. (Her)Ontdek jouw toekomst met ons 9-maanden traject voor jongeren die een nieuwe start zoeken.";
+const defaultDescription = "Een initiatief van Qeske. (Her)Ontdek jouw toekomst met ons 9-maanden traject voor jongeren die een nieuwe start zoeken.";
 
 const defaultContactInfo = {
-  address: "Grotius College\nAkerstraat 117\n6417 BM Heerlen",
+  address: "Qeske\nAkerstraat 117\n6417 BM Heerlen",
   phone: "045 - 571 39 52",
-  email: "info@grotius-lvo.nl"
+  email: "Patrickwolters@gmail.com"
 };
 
 export async function Footer() {
@@ -29,7 +29,7 @@ export async function Footer() {
   const socialLinks = siteSettings?.socialLinks;
   const copyrightText = siteSettings?.copyrightText 
     ? siteSettings.copyrightText.replace('{year}', currentYear.toString())
-    : `© ${currentYear} Novastart - Grotius College. Alle rechten voorbehouden.`;
+    : `© ${currentYear} Novastart - Qeske. Alle rechten voorbehouden.`;
 
   return (
     <footer className="text-white py-12" style={{ background: 'linear-gradient(to bottom, #4A5240, #3D4233)' }}>
@@ -41,13 +41,13 @@ export async function Footer() {
               {footerDescription}
             </p>
             
-            {/* Grotius College Logo */}
+            {/* Qeske Logo */}
             <div className="mt-8 pt-8 border-t border-white/10">
-              {siteSettings?.grotiusLogo?.url ? (
+              {siteSettings?.organizationLogo?.url ? (
                 <div className="relative w-full h-32 flex items-center justify-center">
                   <Image
-                    src={siteSettings.grotiusLogo.url}
-                    alt={siteSettings.grotiusLogo.alt || "Grotius College logo"}
+                    src={siteSettings.organizationLogo.url}
+                    alt={siteSettings.organizationLogo.alt || "Qeske logo"}
                     fill
                     className="object-contain"
                   />
@@ -55,10 +55,10 @@ export async function Footer() {
               ) : (
                 <div className="flex items-center justify-center gap-3">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">GC</span>
+                    <span className="text-white font-bold text-xl">Q</span>
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-white">Grotius College</p>
+                    <p className="text-sm font-semibold text-white">Qeske</p>
                     <p className="text-xs text-neutral-400">Leren, groeien, ontdekken</p>
                   </div>
                 </div>

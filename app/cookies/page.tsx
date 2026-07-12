@@ -125,7 +125,7 @@ export default async function CookiesPage() {
             <h2>5. Vragen?</h2>
             <p>
               Heb je vragen over ons cookiebeleid? Neem dan contact met ons op via 
-              info@novastart.nl of bel naar 045 - 123 4567.
+              Patrickwolters@gmail.com of bel naar 045 - 123 4567.
             </p>
 
             <p className="text-sm text-neutral-600 mt-8">

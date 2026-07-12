@@ -59,7 +59,7 @@ export async function getHomePageData() {
       hero: {
         title: "Novastart",
         subtitle: "(Her)Ontdek jouw toekomst!",
-        description: "Welkom bij Novastart, jouw nieuwe begin in het onderwijs! Een 9-maanden traject speciaal voor middelbare scholieren die een tijd niet naar school zijn geweest en nu klaar zijn om hun weg terug te vinden. Een initiatief van Grotius College.",
+        description: "Welkom bij Novastart, jouw nieuwe begin in het onderwijs! Een 9-maanden traject speciaal voor middelbare scholieren die een tijd niet naar school zijn geweest en nu klaar zijn om hun weg terug te vinden. Een initiatief van Qeske.",
         ctaText: "Meer informatie",
         ctaLink: "/kennismaken-en-aanmelden"
       },
@@ -70,8 +70,8 @@ export async function getHomePageData() {
           icon: "calendar"
         },
         {
-          title: "Ingeschreven bij Grotius",
-          description: "Je staat tijdens het traject ingeschreven bij het Grotius College, zodat je geen jaar mist.",
+          title: "Ingeschreven bij Qeske",
+          description: "Je staat tijdens het traject ingeschreven bij het Qeske, zodat je geen jaar mist.",
           icon: "shield"
         },
         {
@@ -129,7 +129,7 @@ export async function getProgramsData() {
         duur: "9 maanden",
         description: "Bij Novastart geloven we in de kracht van een frisse start en de mogelijkheid om opnieuw koers te zetten naar een succesvolle toekomst. Gedurende 9 maanden bieden wij een op maat gemaakte ondersteuning en begeleiding, zodat je stap voor stap je doelen kunt bereiken en weer met vertrouwen het schoolleven kunt hervatten.",
         voordelen: [
-          "Je staat ingeschreven bij het Grotius College, dus je mist geen jaar",
+          "Je staat ingeschreven bij het Qeske, dus je mist geen jaar",
           "Samenwerking met experts en coaches binnen diverse vakgebieden",
           "Persoonlijke begeleiding om je obstakels weg te nemen",
           "Langzaam inzicht krijgen in wat je wilt, wat je kan en wat je wilt kunnen",
@@ -195,8 +195,8 @@ export async function getTeamData() {
         _id: "1",
         name: "Nathalie Colangeli-Kuckelkorn",
         role: "Ondersteuningscoördinator",
-        bio: "Nathalie is de ondersteuningscoördinator van Novastart en werkt voor Grotius, Vrijeschool Parkstad & Compass. Ze staat centraal in de begeleiding van jongeren en helpt hen hun weg terug te vinden in het onderwijs.",
-        email: "n.colangeli@stichtinglvo.nl",
+        bio: "Nathalie is de ondersteuningscoördinator van Novastart en werkt voor Qeske, Vrijeschool Parkstad & Compass. Ze staat centraal in de begeleiding van jongeren en helpt hen hun weg terug te vinden in het onderwijs.",
+        email: "Patrickwolters@gmail.com",
         phone: "06 46444455"
       },
       {
@@ -204,7 +204,7 @@ export async function getTeamData() {
         name: "Patrick Wolters",
         role: "Projectleider",
         bio: "Patrick is de projectleider van Novastart en zorgt voor de coördinatie en organisatie van het traject. Hij werkt nauw samen met experts, coaches en jongeren om het beste uit iedereen te halen.",
-        email: "p.wolters@stichtinglvo.nl"
+        email: "Patrickwolters@gmail.com"
       }
     ];
   }
@@ -241,7 +241,7 @@ export async function getFAQData(category?: string) {
       {
         _id: "3",
         question: "Moet ik me inschrijven bij een school?",
-        answer: "Op het moment dat je je inschrijft voor dit traject sta je ook ingeschreven bij het Grotius College. Zo zorgen we ervoor dat je geen jaar gaat missen.",
+        answer: "Op het moment dat je je inschrijft voor dit traject sta je ook ingeschreven bij het Qeske. Zo zorgen we ervoor dat je geen jaar gaat missen.",
         category: "ouders"
       },
       {
@@ -265,13 +265,13 @@ export async function getFAQData(category?: string) {
       {
         _id: "7",
         question: "Hoe kan ik contact opnemen voor meer informatie?",
-        answer: "Je kunt contact opnemen met Nathalie Colangeli-Kuckelkorn (Ondersteuningscoördinator) via 06 46444455 of n.colangeli@stichtinglvo.nl, of met Patrick Wolters (Projectleider) via p.wolters@stichtinglvo.nl. Je kunt ook bellen naar het Grotius College: 045 571 39 52.",
+        answer: "Je kunt contact opnemen met Nathalie Colangeli-Kuckelkorn (Ondersteuningscoördinator) via 06 46444455 of Patrickwolters@gmail.com, of met Patrick Wolters (Projectleider) via Patrickwolters@gmail.com. Je kunt ook bellen naar het Qeske: 045 571 39 52.",
         category: "ouders"
       },
       {
         _id: "8",
         question: "Waar is Novastart gevestigd?",
-        answer: "Novastart is een initiatief van Grotius College, dat is gevestigd aan de Akerstraat 117 in Heerlen (6417 BM). Je bent tijdens het traject op diverse locaties actief.",
+        answer: "Novastart is een initiatief van Qeske, dat is gevestigd aan de Akerstraat 117 in Heerlen (6417 BM). Je bent tijdens het traject op diverse locaties actief.",
         category: "algemeen"
       }
     ];
@@ -301,14 +301,14 @@ export async function getPartnersData() {
     return [
       {
         _id: "1",
-        name: "Grotius College",
-        description: "Het Grotius College is de thuisbasis van Novastart en biedt vmbo-tl, havo en vwo onderwijs in Heerlen.",
-        url: "https://www.grotius-lvo.nl"
+        name: "Qeske",
+        description: "Het Qeske is de thuisbasis van Novastart en biedt vmbo-tl, havo en vwo onderwijs in Heerlen.",
+        url: "https://qeske.nl/"
       },
       {
         _id: "2",
         name: "Stichting LVO",
-        description: "Stichting Limburgs Voortgezet Onderwijs is de koepelorganisatie van meerdere scholen in Limburg, waaronder Grotius College.",
+        description: "Stichting Limburgs Voortgezet Onderwijs is de koepelorganisatie van meerdere scholen in Limburg, waaronder Qeske.",
         url: "https://www.stichtinglvo.nl"
       },
       {
@@ -410,9 +410,9 @@ export async function getSiteSettings() {
         "url": logo.asset->url,
         "alt": logo.alt
       },
-      "grotiusLogo": {
-        "url": grotiusLogo.asset->url,
-        "alt": grotiusLogo.alt
+      "organizationLogo": {
+        "url": organizationLogo.asset->url,
+        "alt": organizationLogo.alt
       },
       headerNavigation,
       headerCTA,

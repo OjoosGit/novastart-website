@@ -38,20 +38,20 @@ const headerFooterData = {
   },
   
   // Footer
-  footerDescription: "Een initiatief van Grotius College. (Her)Ontdek jouw toekomst met ons 9-maanden traject voor jongeren die een nieuwe start zoeken.",
+  footerDescription: "Een initiatief van Qeske. (Her)Ontdek jouw toekomst met ons 9-maanden traject voor jongeren die een nieuwe start zoeken.",
   
   footerLinks: [
     { _key: randomKey(12), name: "Privacy", href: "/privacy" },
     { _key: randomKey(12), name: "Cookies", href: "/cookies" },
   ],
   
-  copyrightText: "© {year} Novastart - Grotius College. Alle rechten voorbehouden.",
+  copyrightText: "© {year} Novastart - Qeske. Alle rechten voorbehouden.",
   
   // Contact info
   contactInfo: {
     phone: "045 - 571 39 52",
-    email: "info@grotius-lvo.nl",
-    address: "Grotius College\nAkerstraat 117\n6417 BM Heerlen"
+    email: "Patrickwolters@gmail.com",
+    address: "Qeske\nAkerstraat 117\n6417 BM Heerlen"
   },
   
   // Social media (optioneel - pas aan naar eigen links)

@@ -34,7 +34,7 @@ async function seed() {
         title: "Novastart",
         subtitle: "(Her)Ontdek jouw toekomst!",
         description:
-          "Welkom bij Novastart, jouw nieuwe begin in het onderwijs! Een 9-maanden traject speciaal voor middelbare scholieren die een tijd niet naar school zijn geweest en nu klaar zijn om hun weg terug te vinden. Een initiatief van Grotius College.",
+          "Welkom bij Novastart, jouw nieuwe begin in het onderwijs! Een 9-maanden traject speciaal voor middelbare scholieren die een tijd niet naar school zijn geweest en nu klaar zijn om hun weg terug te vinden. Een initiatief van Qeske.",
         ctaText: "Meer informatie",
         ctaLink: "/kennismaken-en-aanmelden",
       },
@@ -326,7 +326,7 @@ async function seed() {
         "Novastart biedt onderwijstrajecten voor jongeren die zijn vastgelopen in het reguliere onderwijs. Persoonlijke begeleiding in een kleinschalige setting.",
       contactInfo: {
         phone: "045 - 123 4567",
-        email: "info@novastart.nl",
+        email: "Patrickwolters@gmail.com",
         address: "Voorbeeldstraat 123\n6411 AB Heerlen",
       },
       defaultSEO: {
@@ -346,7 +346,7 @@ async function seed() {
       slug: { current: "waar-we-voor-staan", _type: "slug" },
       hero: {
         title: "Waar we voor staan",
-        description: "(Her)Ontdek jouw toekomst! Een initiatief van Grotius College.",
+        description: "(Her)Ontdek jouw toekomst! Een initiatief van Qeske.",
       },
       sections: [
         {
@@ -360,8 +360,8 @@ async function seed() {
           heading: "Praktijk: Hoe werkt het?",
           items: [
             {
-              title: "Ingeschreven bij Grotius",
-              content: "Op het moment dat je je inschrijft voor dit traject sta je ook ingeschreven bij het Grotius College. Zo zorgen we er voor dat je geen jaar gaat missen.",
+              title: "Ingeschreven bij Qeske",
+              content: "Op het moment dat je je inschrijft voor dit traject sta je ook ingeschreven bij het Qeske. Zo zorgen we er voor dat je geen jaar gaat missen.",
             },
             {
               title: "Experts en coaches",
@@ -385,7 +385,7 @@ async function seed() {
         },
       ],
       seo: {
-        metaTitle: "Waar we voor staan - Novastart | Grotius College",
+        metaTitle: "Waar we voor staan - Novastart | Qeske",
         metaDescription: "(Her)Ontdek jouw toekomst! Novastart gelooft in de kracht van een frisse start en biedt op maat gemaakte ondersteuning voor middelbare scholieren.",
       },
     });
@@ -437,10 +437,10 @@ async function seed() {
               name: "Patrick Wolters",
               role: "Projectleider",
               phone: "",
-              email: "p.wolters@stichtinglvo.nl",
+              email: "Patrickwolters@gmail.com",
             },
             {
-              name: "Grotius College",
+              name: "Qeske",
               role: "",
               phone: "045 - 571 39 52",
               email: "",
@@ -465,7 +465,7 @@ async function seed() {
       },
       sections: [],
       seo: {
-        metaTitle: "Wat we bieden - Novastart | Grotius College",
+        metaTitle: "Wat we bieden - Novastart | Qeske",
         metaDescription: "Een 9-maanden traject voor middelbare scholieren die een tijd niet naar school zijn geweest. Persoonlijke begeleiding met experts en coaches.",
       },
     });
@@ -499,14 +499,14 @@ async function seed() {
     await client.create({
       _type: "contactInfo",
       title: "Contact Informatie",
-      organization: "Grotius College",
+      organization: "Qeske",
       address: {
         street: "Akerstraat 117",
         postalCode: "6417 BM",
         city: "Heerlen",
       },
       phone: "045 - 571 39 52",
-      email: "info@grotius-lvo.nl",
+      email: "Patrickwolters@gmail.com",
       openingHours: "Maandag t/m vrijdag\n08:30 - 16:30 uur",
       mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2510.7947147567847!2d5.971839!3d50.881947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDUyJzU1LjAiTiA1wrA1OCcxOC42IkU!5e0!3m2!1snl!2snl!4v1234567890",
       publicTransport: "Vanaf station Heerlen is het 10 minuten lopen. Vanuit het station loop je richting het centrum en neem je de eerste afslag rechts.",
@@ -523,7 +523,7 @@ async function seed() {
       sections: [
         {
           heading: "1. Wie zijn wij?",
-          content: "Novastart is een onderwijsinstelling in Heerlen. Wij zijn verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.\n\nNovastart\nAkerstraat 117\n6417 BM Heerlen\nE-mail: info@grotius-lvo.nl\nTelefoon: 045 - 571 39 52",
+          content: "Novastart is een onderwijsinstelling in Heerlen. Wij zijn verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.\n\nNovastart\nAkerstraat 117\n6417 BM Heerlen\nE-mail: Patrickwolters@gmail.com\nTelefoon: 045 - 571 39 52",
           list: [],
         },
         {
@@ -628,7 +628,7 @@ async function seed() {
         },
         {
           heading: "4. Contact",
-          content: "Voor vragen over ons cookiebeleid kun je contact met ons opnemen via info@grotius-lvo.nl of 045 - 571 39 52.",
+          content: "Voor vragen over ons cookiebeleid kun je contact met ons opnemen via Patrickwolters@gmail.com of 045 - 571 39 52.",
           list: [],
         },
       ],

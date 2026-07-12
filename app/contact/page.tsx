@@ -57,8 +57,8 @@ export default async function ContactPage() {
                   <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">E-mail</h3>
-                    <a href={`mailto:${contactInfo?.email || "info@grotius-lvo.nl"}`} className="text-primary hover:underline">
-                      {contactInfo?.email || "info@grotius-lvo.nl"}
+                    <a href={`mailto:${contactInfo?.email || "Patrickwolters@gmail.com"}`} className="text-primary hover:underline">
+                      {contactInfo?.email || "Patrickwolters@gmail.com"}
                     </a>
                   </div>
                 </div>

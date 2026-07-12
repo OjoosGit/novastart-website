@@ -52,7 +52,7 @@ export default async function VoorOudersPage() {
                 Stel je vraag
               </a>
               <a href="tel:0455713952" className="btn-secondary">
-                Bel Grotius College
+                Bel Qeske
               </a>
             </div>
           </div>

@@ -5,10 +5,10 @@ import { getProgramsData, getContentPage } from "@/cms/queries";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Wat we bieden - Novastart | Grotius College",
+  title: "Wat we bieden - Novastart | Qeske",
   description: "Een 9-maanden traject voor middelbare scholieren die een tijd niet naar school zijn geweest. Persoonlijke begeleiding met experts en coaches.",
   openGraph: {
-    title: "Wat we bieden - Novastart | Grotius College",
+    title: "Wat we bieden - Novastart | Qeske",
     description: "Een 9-maanden traject voor middelbare scholieren die een tijd niet naar school zijn geweest. Persoonlijke begeleiding met experts en coaches.",
   },
 };

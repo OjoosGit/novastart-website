@@ -182,7 +182,7 @@ SANITY_API_READ_TOKEN=your_token_here
 # Resend Email Service
 RESEND_API_KEY=your_resend_api_key
 RESEND_FROM=Novastart <no-reply@novastart.nl>
-RESEND_TO=info@grotius-lvo.nl
+RESEND_TO=Patrickwolters@gmail.com
 
 # Site URL
 NEXT_PUBLIC_SITE_URL=https://novastart.nl
@@ -338,12 +338,12 @@ npm run build
 ## 📞 Support
 
 Voor vragen over deze security updates:
-- Email: info@grotius-lvo.nl
+- Email: Patrickwolters@gmail.com
 - Tel: 045 - 571 39 52
 
 Voor security issues:
 - Zie `public/.well-known/security.txt`
-- Of email direct naar info@grotius-lvo.nl
+- Of email direct naar Patrickwolters@gmail.com
 
 ---
 

@@ -15,7 +15,7 @@ export default defineType({
     defineField({
       name: 'organization',
       title: 'Organisatie Naam',
-      description: 'Bijv: Grotius College',
+      description: 'Bijv: Qeske',
       type: 'string',
     }),
     defineField({

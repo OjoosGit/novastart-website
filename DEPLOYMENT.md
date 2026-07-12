@@ -13,7 +13,7 @@ SANITY_API_READ_TOKEN=xxx
 SANITY_API_WRITE_TOKEN=xxx
 RESEND_API_KEY=re_xxx
 RESEND_FROM="Novastart <no-reply@jouwdomein.nl>"
-RESEND_TO="info@novastart.nl"
+RESEND_TO="Patrickwolters@gmail.com"
 NEXT_PUBLIC_SITE_URL=https://novastart.nl
 ```
 
